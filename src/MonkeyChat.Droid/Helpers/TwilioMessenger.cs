@@ -5,13 +5,13 @@ using System.Threading.Tasks;
 using Android.Widget;
 using Plugin.DeviceInfo;
 
-using Twilio.Common;
-using Twilio.IPMessaging;
+//using Twilio.Common;
+//using Twilio.IPMessaging;
 
 
 namespace MonkeyChat.Droid
 {
-    public class TwilioMessenger : Java.Lang.Object, ITwilioMessenger, IPMessagingClientListener, IChannelListener, ITwilioAccessManagerListener
+/*    public class TwilioMessenger : Java.Lang.Object, ITwilioMessenger, IPMessagingClientListener, IChannelListener, ITwilioAccessManagerListener
     {
         public ITwilioIPMessagingClient Client { get; private set; }
         public static IChannel GeneralChannel { get; private set; }
@@ -244,6 +244,6 @@ namespace MonkeyChat.Droid
         }
     }
 
-
+    */
 }
 

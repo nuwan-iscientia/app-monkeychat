@@ -14,8 +14,8 @@ namespace MonkeyChat
         public static async Task<string> GetTokenAsync()
         {
             var id = CrossDeviceInfo.Current.Id;
-
-            var tokenEndpoint = $"https://xamarinchat.azurewebsites.net/token?device={id}";
+            return await Task.FromResult("");
+         /*   var tokenEndpoint = $"https://xamarinchat.azurewebsites.net/token?device={id}";
 
             var http = new HttpClient();
             var data = await http.GetStringAsync(tokenEndpoint);
@@ -24,7 +24,7 @@ namespace MonkeyChat
 
             Identity = response.Identity?.Trim('"') ?? string.Empty;
 
-            return response?.Token?.Trim('"') ?? string.Empty;
+            return response?.Token?.Trim('"') ?? string.Empty;*/
         }
     }
 

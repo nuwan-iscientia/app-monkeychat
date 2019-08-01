@@ -25,7 +25,7 @@ namespace MonkeyChat
                 try
                 {
                     IsBusy = true;
-                    success = await twilioMessenger.InitializeAsync();
+                    success = true;// await twilioMessenger.InitializeAsync();
                 }
                 catch (Exception ex)
                 {

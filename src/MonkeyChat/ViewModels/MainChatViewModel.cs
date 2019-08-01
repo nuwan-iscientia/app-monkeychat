@@ -64,7 +64,7 @@ namespace MonkeyChat
             {
                 try
                 {
-                    var local = await CrossGeolocator.Current.GetPositionAsync(10000);
+                    var local = await CrossGeolocator.Current.GetPositionAsync();
                     var map = $"https://maps.googleapis.com/maps/api/staticmap?center={local.Latitude.ToString(CultureInfo.InvariantCulture)},{local.Longitude.ToString(CultureInfo.InvariantCulture)}&zoom=17&size=400x400&maptype=street&markers=color:red%7Clabel:%7C{local.Latitude.ToString(CultureInfo.InvariantCulture)},{local.Longitude.ToString(CultureInfo.InvariantCulture)}&key=";
 
                     var message = new Message
